@@ -1,0 +1,26 @@
+{
+	"name": "figure-it-out-csv-export",
+	"version": "1.1.0",
+	"private": true,
+	"main": "dist/server.js",
+	"scripts": {
+		"start": "node dist/server.js",
+		"build": "tsc",
+		"dev": "tsc -w",
+		"test:small": "curl 'http://localhost:3000/residents/export.csv?count=10000' -o /dev/null",
+		"test:slow": "curl --limit-rate 10k 'http://localhost:3000/residents/export.csv?count=1000000' -o /dev/null",
+		"test:abort": "node -e \"console.log('Starting download; press Ctrl+C to abort...')\" && curl 'http://localhost:3000/residents/export.csv?count=1000000' -o /dev/null",
+		"test:large": "curl 'http://localhost:3000/residents/export.csv?count=5000000' -o ./massive-output.csv",
+		"test:xlarge": "curl 'http://localhost:3000/residents/export.csv?count=10000000' -o /dev/null"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@types/node": "^26.6.5"
+	},
+	"dependencies": {
+		"typescript": "^7.0.2"
+	}
+}
