@@ -1,0 +1,26 @@
+src/server.ts
+  h_a72bd6367c212f 40,42,46,53
+  h_a72bd6367c212f 13,37-39,41,43-45,47-52,63-64
+.gitignore
+  h_a72bd6367c212f 2-4
+package.json
+  h_a72bd6367c212f 12,22-24
+  h_a72bd6367c212f 11,13-14,19-21,25
+README.md
+  h_a72bd6367c212f 1,3,5,7,10-11
+src/db/residents.ts
+  h_a72bd6367c212f 1
+tsconfig.json
+  h_a72bd6367c212f 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "35fcffc158e5bbd64303595ae60e3a3f208ebf18",
+  "prompts": {},
+  "humans": {
+    "h_a72bd6367c212f": {
+      "author": "Andy Zhang <andy@exacare.com>"
+    }
+  }
+}
